@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   hamburger.addEventListener('click',function(){
     navArea.classList.toggle('hamburgerOpen')
-  nav.classList.toggle('navOpen')
+  　nav.classList.toggle('navOpen')
   })
 
 
