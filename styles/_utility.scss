@@ -1,0 +1,28 @@
+@use "variables" as var;
+@use "setting" as set;
+
+.u-wrapper{
+  width: 934px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 4%;
+}
+
+.u-BG{
+  background-color: var.$background;
+}
+.u-logoT{
+  width: 154px;
+  height: 154px;
+  background-color: var.$background;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 29px;
+}
+.u-logoB{
+  width: 300px;
+}
+.u-footerLogoT{
+  border-radius: 0;
+  background-color: #fff;
+}
