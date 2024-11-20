@@ -27,6 +27,34 @@ document.addEventListener("DOMContentLoaded", function () {
     })
   })
 
+  // fade
+  gsap.registerPlugin(ScrollTrigger);
+  const fade = gsap.utils.toArray('.fade')
+  console.log(fade)
+  
+  fade.forEach(el => {
+    gsap.fromTo(el, {
+  
+  y: 40, 
+  opacity: 0, 
+  duration: 2, 
+  ease:'power4.inOut' },
+  
+  {
+  y: 0, 
+  opacity: 1, 
+  duration: 1.5, 
+  ease: 'power4.inout',
+  
+  scrollTrigger: {
+    trigger: el,
+    start: 'top 70%',
+    // markers: true,
+    },
+  });
+  });
+
+
 
 
   // **Swiper の初期化**

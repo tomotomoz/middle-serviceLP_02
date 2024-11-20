@@ -276,6 +276,7 @@ a {
 .about__left {
   position: absolute;
   top: 60px;
+  z-index: 70;
 
   @include set.mediaQuery(tab) {
     position: static;

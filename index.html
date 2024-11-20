@@ -25,7 +25,7 @@
   <header class="header">
 
     <div class="header__mainViewArea">
-      <h1 class="header__mainTextList">
+      <h1 class="header__mainTextList fade">
         <span class="header__mainTextItem animate fadeIn">あなたは知ってる？</span>
         <span class="header__mainTextItem animate fadeIn delay-1s">蓼科を丸ごと味わう</span>
         <span class="header__mainTextItem animate fadeIn delay-2s">喜びを</span>
@@ -77,8 +77,8 @@
     <div class="about__wrapper">
 
       <div class="about__left">
-        <h2 class="about__title">蓼科の生きた豊かな恵みを、そのままに</h2>
-        <div class="about__textBox">
+        <h2 class="about__title fade">蓼科の生きた豊かな恵みを、そのままに</h2>
+        <div class="about__textBox fade">
           <p class="about__text">
             「蓼科ごとう農園」は、蓼科の新鮮な農産物を提供するだけでなく、
             蓼科の自然環境を大切に守り、後世に残すことを使命としています。
@@ -107,8 +107,8 @@
       </div>
 
       <div class="about__imgBox">
-        <img class="about__img01" src="img/about-01.png" alt="">
-        <img class="about__img02" src="img/about-02.png" alt="">
+        <img class="about__img01 fade" src="img/about-01.png" alt="">
+        <img class="about__img02 fade" src="img/about-02.png" alt="">
       </div>
     </div>
   </section>
@@ -248,8 +248,8 @@
       </ul>
     </div>
 
-    <div class="news__randomImg">
-      <img class="c-randomImg news__Img" src="img/random_img/grapes-middle.png" alt="">
+    <div class="news__randomImg fade">
+      <img class="c-randomImg c-randomImgActive news__Img" src="img/random_img/grapes-middle.png" alt="">
     </div>
 
   </section>
@@ -284,8 +284,8 @@
 
       </dl>
     </div>
-    <div class="faq__randomImg">
-      <img class="c-randomImg faq__img" src="img/random_img/breakfast-middle.png" alt="">
+    <div class="faq__randomImg fade">
+      <img class="c-randomIm c-randomImgActive faq__img" src="img/random_img/breakfast-middle.png" alt="">
     </div>
   </section>
 
@@ -329,8 +329,8 @@
       </div>
     </div>
 
-    <div class="access__randomImg">
-      <img class="c-randomImg access__img" src="img/random_img/Brussels_sprouts-middle.png" alt="">
+    <div class="access__randomImg fade">
+      <img class="c-randomImg c-randomImgActive access__img" src="img/random_img/Brussels_sprouts-middle.png" alt="">
     </div>
   </section>
 
@@ -342,7 +342,7 @@
         ご購入・販売に関しましては、下記よりお気軽にお問い合わせください。
       </p>
 
-      <div class="contact__areaWrapper">
+      <div class="contact__areaWrapper fade">
         <div class="contact__areaMainTitle">
           お問い合わせメールフォーム
         </div>
@@ -424,7 +424,7 @@
   <!-- footer -->
   <footer class="footer">
     <div class="u-wrapper">
-      <div class="footer__logo">
+      <div class="footer__logo fade">
         <img class="u-logoT u-footerLogoT" src="img/logo-01.svg" alt="">
         <img class="u-logoB" src="img/logo-02.svg" alt="">
       </div>
@@ -451,6 +451,8 @@
     <p class="copylight"><small>&copy;2019 GOTONOUEN.</small></p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>

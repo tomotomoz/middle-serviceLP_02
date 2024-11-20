@@ -43,6 +43,10 @@
   width: 250px;
 }
 
+.c-randomImgActive:hover {
+  rotate: -20deg;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -307,6 +311,7 @@ a:hover {
 .about__left {
   position: absolute;
   top: 60px;
+  z-index: 70;
 }
 @media screen and (max-width: 768px) {
   .about__left {

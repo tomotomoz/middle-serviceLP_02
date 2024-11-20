@@ -13,4 +13,10 @@ margin-bottom: 90px;
 }
 .c-randomImg{
   width: 250px;
+ 
+}
+.c-randomImgActive{
+  &:hover{
+    rotate: -20deg;
+  }
 }
