@@ -92,7 +92,7 @@ a:hover {
   right: 11%;
   align-items: flex-start;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .header__mainTextList {
     flex-direction: column;
     gap: 8px;
@@ -110,7 +110,7 @@ a:hover {
   font-weight: bold;
   letter-spacing: 1.5rem;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .header__mainTextItem {
     writing-mode: unset;
     padding: 4px;
@@ -148,7 +148,7 @@ a:hover {
   position: relative;
   max-width: 100%;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .header__nav {
     flex-direction: column;
     justify-content: flex-start;
@@ -209,12 +209,16 @@ a:hover {
 .header__navListRight {
   display: flex;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .header__navListLeft,
   .header__navListRight {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.header__navListLeft {
+  margin-bottom: 16px;
 }
 
 .header__navItem {
@@ -223,7 +227,7 @@ a:hover {
   margin-top: 95px;
   margin-bottom: 85px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .header__navItem {
     margin: 0;
   }
@@ -232,7 +236,7 @@ a:hover {
 .header__navItem:not(:last-child) {
   margin-right: 39px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .header__navItem:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 16px;
@@ -251,7 +255,7 @@ a:hover {
   border-radius: 100px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .header__hamburger {
     display: block;
   }
@@ -291,10 +295,10 @@ a:hover {
   padding-bottom: 126px;
   padding-left: 4%;
   padding-right: 4%;
-  max-width: 1064px;
-  margin: 0 auto;
+  max-width: 1360px;
+  margin-left: auto;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .about__wrapper {
     position: static;
   }
@@ -304,7 +308,7 @@ a:hover {
   position: absolute;
   top: 60px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .about__left {
     position: static;
     font-size: 1.4rem;
@@ -321,7 +325,7 @@ a:hover {
   margin-bottom: 28px;
   border-radius: 2px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .about__title {
     margin-bottom: 8px;
   }
@@ -334,7 +338,7 @@ a:hover {
   top: 104px;
   border-radius: 2px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .about__textBox {
     max-width: 100%;
     margin-bottom: 24px;
@@ -444,7 +448,7 @@ a:hover {
 .faq__list {
   padding: 0 90px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .faq__list {
     padding: 0 4%;
   }
@@ -505,7 +509,7 @@ a:hover {
   display: flex;
   gap: 32px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .access__wrapper {
     flex-direction: column;
     align-items: center;
@@ -516,7 +520,7 @@ a:hover {
 .access__left {
   width: 50%;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1080px) {
   .access__left {
     width: 100%;
   }
@@ -524,11 +528,17 @@ a:hover {
 
 .access__right {
   width: 40%;
+  max-width: 100%;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1080px) {
   .access__right {
     width: 100%;
   }
+}
+
+.access__map {
+  max-width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .access__box {
@@ -590,7 +600,7 @@ a:hover {
   padding: 37px 76px 43px 76px;
   max-width: 100%;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .contact__areaWrapper {
     padding-left: 30px;
     padding-right: 30px;
@@ -619,7 +629,7 @@ a:hover {
   border-radius: 10px;
   background-color: #FED966;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .contact__title {
     line-height: 2;
   }
@@ -638,7 +648,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .contact__form {
     flex-wrap: nowrap;
     display: block;
@@ -653,7 +663,7 @@ a:hover {
 .contact__title {
   width: 40%;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .contact__title {
     width: 100%;
   }
@@ -663,7 +673,7 @@ a:hover {
   width: 55%;
   margin-bottom: 24px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .contact__enter {
     width: 100%;
   }
@@ -714,7 +724,7 @@ a:hover {
   justify-content: center;
   margin-bottom: 97px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .footer__navList {
     flex-direction: column;
   }
@@ -724,7 +734,7 @@ a:hover {
   font-weight: bold;
   color: #4e301b;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .footer__navItem {
     margin-bottom: 16px;
   }
@@ -733,7 +743,7 @@ a:hover {
 .footer__navItem:not(:last-child) {
   margin-right: 24px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .footer__navItem:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 16px;

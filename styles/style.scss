@@ -185,6 +185,10 @@ a {
   }
 }
 
+.header__navListLeft {
+  margin-bottom: 16px;
+}
+
 .header__navItem {
   font-weight: bold;
   color: var.$mainFont;
@@ -261,8 +265,8 @@ a {
   padding-bottom: 126px;
   padding-left: 4%;
   padding-right: 4%;
-  max-width: 1064px;
-  margin: 0 auto;
+  max-width: 1360px;
+  margin-left: auto;
 
   @include set.mediaQuery(tab) {
     position: static;
@@ -319,6 +323,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap-reverse;
+
 }
 
 .about__img01 {
@@ -391,13 +396,15 @@ a {
   margin-right: 120px;
 }
 
-.news__randomImg{
+.news__randomImg {
   position: relative;
 }
-.news__Img{
+
+.news__Img {
   position: absolute;
   right: 0;
 }
+
 // faq
 .faq {
   background-color: var.$background;
@@ -457,17 +464,20 @@ a {
 .open {
   display: block;
 }
-.faq__randomImg{
+
+.faq__randomImg {
   position: relative;
 }
-.faq__img{
+
+.faq__img {
   position: absolute;
   width: 300px;
 }
+
 // access
 .access {
   padding: 91px 0 78px 0;
- 
+
 }
 
 .access__wrapper {
@@ -484,17 +494,24 @@ a {
 .access__left {
   width: 50%;
 
-  @include set.mediaQuery(tab) {
+  @include set.mediaQuery(pc) {
     width: 100%;
   }
 }
 
 .access__right {
   width: 40%;
+  max-width: 100%;
 
-  @include set.mediaQuery(tab) {
+  @include set.mediaQuery(pc) {
     width: 100%;
   }
+}
+
+.access__map {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  
 }
 
 .access__box {
@@ -522,11 +539,13 @@ a {
   font-weight: 700;
   font-size: 1.8rem;
 }
-.access__randomImg{
+
+.access__randomImg {
   position: relative;
-  
+
 }
-.access__img{
+
+.access__img {
   position: absolute;
   right: 0;
 }
@@ -688,7 +707,8 @@ a {
 .footer__navItem {
   font-weight: bold;
   color: var.$mainFont;
-  @include set.mediaQuery(pc){
+
+  @include set.mediaQuery(pc) {
     margin-bottom: 16px;
   }
 }
@@ -702,24 +722,26 @@ a {
   }
 }
 
-.footer__imgWrapper{
+.footer__imgWrapper {
   position: relative;
 }
 
-.footer__imgLeft{
+.footer__imgLeft {
   position: absolute;
   left: 0;
   bottom: 0;
 }
 
-.footer__imgRight{
+.footer__imgRight {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-.footer__img{
+
+.footer__img {
   width: 200px;
 }
+
 .copylight {
   background-color: var.$gray;
   width: 100vw;
