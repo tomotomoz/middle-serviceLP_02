@@ -71,7 +71,7 @@ a:hover {
 }
 
 .header__mainViewArea {
-  background-image: url(/img/fv.jpg);
+  background-image: url(../img/fv.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
