@@ -14,10 +14,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".header__hamburger");
   const navArea = document.querySelector('.header__navAreaWrapper')
   const nav = document.querySelector('u-BG')
+  const navItem = document.querySelectorAll('.header__navItem')
 
   hamburger.addEventListener('click',function(){
     navArea.classList.toggle('hamburgerOpen')
-  　nav.classList.toggle('navOpen')
+    nav.classList.toggle('navOpen')
+  });
+
+  navItem.forEach((el) => {
+    el.addEventListener('click', (el) => {
+      navArea.classList.remove('hamburgerOpen')
+    })
   })
 
 

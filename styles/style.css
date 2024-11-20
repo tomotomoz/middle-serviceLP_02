@@ -39,6 +39,10 @@
   margin-bottom: 67px;
 }
 
+.c-randomImg {
+  width: 250px;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -332,6 +336,7 @@ a:hover {
 @media screen and (max-width: 720px) {
   .about__textBox {
     max-width: 100%;
+    margin-bottom: 24px;
   }
 }
 
@@ -397,7 +402,7 @@ a:hover {
 }
 
 .news {
-  padding: 91px 4%;
+  padding: 91px 0;
 }
 
 .news__area {
@@ -415,6 +420,15 @@ a:hover {
 
 .news__time {
   margin-right: 120px;
+}
+
+.news__randomImg {
+  position: relative;
+}
+
+.news__Img {
+  position: absolute;
+  right: 0;
 }
 
 .faq {
@@ -473,10 +487,17 @@ a:hover {
   display: block;
 }
 
+.faq__randomImg {
+  position: relative;
+}
+
+.faq__img {
+  position: absolute;
+  width: 300px;
+}
+
 .access {
   padding: 91px 0 78px 0;
-  padding-left: 4%;
-  padding-right: 4%;
 }
 
 .access__wrapper {
@@ -533,6 +554,15 @@ a:hover {
   width: 75%;
   font-weight: 700;
   font-size: 1.8rem;
+}
+
+.access__randomImg {
+  position: relative;
+}
+
+.access__img {
+  position: absolute;
+  right: 0;
 }
 
 .contact {
@@ -683,7 +713,7 @@ a:hover {
   justify-content: center;
   margin-bottom: 97px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1000px) {
   .footer__navList {
     flex-direction: column;
   }
@@ -693,15 +723,40 @@ a:hover {
   font-weight: bold;
   color: #4e301b;
 }
+@media screen and (max-width: 1000px) {
+  .footer__navItem {
+    margin-bottom: 16px;
+  }
+}
 
 .footer__navItem:not(:last-child) {
   margin-right: 24px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1000px) {
   .footer__navItem:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 16px;
   }
+}
+
+.footer__imgWrapper {
+  position: relative;
+}
+
+.footer__imgLeft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer__imgRight {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.footer__img {
+  width: 200px;
 }
 
 .copylight {

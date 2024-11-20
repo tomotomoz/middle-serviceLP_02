@@ -302,6 +302,7 @@ a {
 
   @include set.mediaQuery(tab) {
     max-width: 100%;
+    margin-bottom: 24px;
   }
 }
 
@@ -369,7 +370,7 @@ a {
 
 // news
 .news {
-  padding: 91px 4%;
+  padding: 91px 0;
 }
 
 .news__area {
@@ -389,6 +390,13 @@ a {
   margin-right: 120px;
 }
 
+.news__randomImg{
+  position: relative;
+}
+.news__Img{
+  position: absolute;
+  right: 0;
+}
 // faq
 .faq {
   background-color: var.$background;
@@ -448,13 +456,16 @@ a {
 .open {
   display: block;
 }
-
-
+.faq__randomImg{
+  position: relative;
+}
+.faq__img{
+  position: absolute;
+  width: 300px;
+}
 // access
 .access {
   padding: 91px 0 78px 0;
-  padding-left: 4%;
-  padding-right: 4%;
 }
 
 .access__wrapper {
@@ -509,6 +520,15 @@ a {
   font-weight: 700;
   font-size: 1.8rem;
 }
+.access__randomImg{
+  position: relative;
+  
+}
+.access__img{
+  position: absolute;
+  right: 0;
+}
+
 
 .contact {
   background-color: var.$background;
@@ -657,7 +677,7 @@ a {
   justify-content: center;
   margin-bottom: 97px;
 
-  @include set.mediaQuery(tab) {
+  @include set.mediaQuery(pc) {
     flex-direction: column;
   }
 }
@@ -665,17 +685,38 @@ a {
 .footer__navItem {
   font-weight: bold;
   color: var.$mainFont;
+  @include set.mediaQuery(pc){
+    margin-bottom: 16px;
+  }
 }
 
 .footer__navItem:not(:last-child) {
   margin-right: 24px;
 
-  @include set.mediaQuery(tab) {
+  @include set.mediaQuery(pc) {
     margin-right: 0px;
     margin-bottom: 16px;
   }
 }
 
+.footer__imgWrapper{
+  position: relative;
+}
+
+.footer__imgLeft{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer__imgRight{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.footer__img{
+  width: 200px;
+}
 .copylight {
   background-color: var.$gray;
   width: 100vw;
