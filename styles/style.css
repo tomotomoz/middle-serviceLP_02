@@ -84,7 +84,8 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  background-position: top center;
+  background-position: center top;
+  width: 100%;
 }
 
 .header__mainTextList {
@@ -101,7 +102,8 @@ a:hover {
     flex-direction: column;
     gap: 8px;
     top: 60%;
-    left: 10%;
+    left: 20px;
+    width: 80%;
   }
 }
 
@@ -403,7 +405,7 @@ a:hover {
   width: 100%;
   max-width: 1280px;
   height: auto;
-  /* 任意の高さに調整 */
+  margin: 0 auto;
 }
 
 .news {

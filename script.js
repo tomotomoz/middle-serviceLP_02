@@ -79,11 +79,11 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerGroup: 1, 
       },
       720: {
-        slidesPerView: 2, 
+        slidesPerView: 4, 
         slidesPerGroup: 1, 
       },
       375: {
-        slidesPerView: 1, 
+        slidesPerView: 2, 
         slidesPerGroup: 1, 
       },
     },
