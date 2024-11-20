@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const hamburger = document.querySelector(".header__hamburger");
   const navArea = document.querySelector('.header__navAreaWrapper')
-  const nav = document.querySelector('u-BG')
+  const nav = document.querySelector('.u-BG')
   const navItem = document.querySelectorAll('.header__navItem')
 
   hamburger.addEventListener('click',function(){
@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // fade
   gsap.registerPlugin(ScrollTrigger);
   const fade = gsap.utils.toArray('.fade')
-  console.log(fade)
   
   fade.forEach(el => {
     gsap.fromTo(el, {
@@ -62,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
     direction: 'horizontal', 
     loop: true,       
     speed: 1000,             
-    slidesPerView: 5, // 1度に表示するスライド枚数
-  slidesPerGroup: 1, // 1度に移動するスライド枚数  
+    slidesPerView: 5, 
+  slidesPerGroup: 1,  
     loopAdditionalSlides: 2,
     autoplay: {
       delay: 3000,          
@@ -76,15 +75,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     breakpoints: {
       1000:{
-        slidesPerView: 4, 
+        slidesPerView: 5, 
         slidesPerGroup: 1, 
       },
       720: {
-        slidesPerView: 3, 
+        slidesPerView: 2, 
         slidesPerGroup: 1, 
       },
-      430: {
-        slidesPerView: 2, 
+      375: {
+        slidesPerView: 1, 
         slidesPerGroup: 1, 
       },
     },
