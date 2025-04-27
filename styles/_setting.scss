@@ -6,7 +6,7 @@ $breakPoint: (
 );
 
 @mixin mediaQuery($bp) {
-  @media #{map-get($breakPoint, $bp)} {
+  @media screen and #{map-get($breakPoint, $bp)} {
     @content;
   }
 }
